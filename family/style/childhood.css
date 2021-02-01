@@ -1,0 +1,16 @@
+div.container {
+    float: left;
+    padding: 10px;
+}
+div.container {
+    float: right;
+}
+div.container {
+    float: left;
+}
+div.container {
+    float: right;
+}
+h3{
+  padding: 10px;
+}

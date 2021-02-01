@@ -1,0 +1,59 @@
+body{
+  background-color:  rgba(32, 63, 96, 1);
+}
+header{
+  background-image:  url(../images/mountainfog5.jpg);
+  background-size: cover;
+  padding:  12px;
+  text-align: center;
+  font-family:Garamond, Georgia, serif;
+  font-size:  20px;
+}
+div{
+  padding: 30px;
+}
+nav{
+  background-color:  rgb(24, 47.25, 72);
+  width: 15%;
+  float: left;
+  height: 435px;
+  padding-left: -10px;
+  padding-right: 10px;
+}
+section{
+  //background-color: rgb(158, 189, 224);
+  background-color: rgb(134.3, 160.65, 190.4);
+  //padding:  10px, 30px, 10px, 19%;
+  padding-top:  10px;
+  padding-right: 17px;
+  padding-left:  17%;
+  padding-bottom: 45px;
+  font-family: Georgia,Times,Times New Roman,serif;
+  //font-family: arial, helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+  display: block;
+  padding: 2px;
+  color: rgb(158, 189, 224);
+  font-family: Georgia,Times,Times New Roman,serif;
+}
+nav li{
+  list-style: none;
+  padding: 4px;
+}
+img{
+  padding:2px;
+  border:6px solid #4e3318;
+  background-color:#edd9c4;
+  float: right;
+}
+div.container{
+  float: left;
+}
+h3{
+  padding: 10px;
+}
+footer{
+  color: rgb(158, 189, 224);
+}
