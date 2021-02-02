@@ -9,7 +9,7 @@ header{
   font-family:Garamond, Georgia, serif;
   font-size:  20px;
 }
-div{
+.edgepadding{
   padding: 30px;
 }
 nav{
@@ -28,15 +28,14 @@ section{
   padding-right: 17px;
   padding-left:  17%;
   padding-bottom: 45px;
-  font-family: Georgia,Times,Times New Roman,serif;
-  //font-family: arial, helvetica, sans-serif;
+  font-family: arial, helvetica, sans-serif;
 }
 a{
   text-decoration: none;
   display: block;
   padding: 2px;
   color: rgb(158, 189, 224);
-  font-family: Georgia,Times,Times New Roman,serif;
+  font-family: arial, helvetica, sans-serif;
 }
 nav li{
   list-style: none;
@@ -46,14 +45,48 @@ img{
   padding:2px;
   border:6px solid #4e3318;
   background-color:#edd9c4;
-  float: right;
-}
-div.container{
-  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 h3{
-  padding: 10px;
+  padding: 5px;
 }
 footer{
   color: rgb(158, 189, 224);
+}
+
+/*WHY DO THESE MESS EVERYTHING UP WHEN THEY'RE REMOVED OR EVEN MOVED BELOW THE REST OF THE CODE, YET THEY'RE NOT IN THE HTML CODE?*/
+.containerleft{
+  float: left;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.containerright
+  float: right;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+/*BACK TO INTENTIONAL CODE*/
+.floatleft{
+  float: left;
+}
+.floatright{
+  float: right;
+}
+.clearfix{
+  overflow: auto;
+}
+.divcolumn2 {
+  column-count: 2;
+  column-width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+.img-container {
+        text-align: center;
+      }
+div.height{
+  height=100px;
 }
