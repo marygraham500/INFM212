@@ -37,6 +37,13 @@ a{
   color: rgb(158, 189, 224);
   font-family: arial, helvetica, sans-serif;
 }
+a:hover{
+  border:2px solid rgb(158, 189, 224);
+}
+.currentactive{
+  background-color: rgb(158, 189, 224);
+  color: #000000;
+}
 nav li{
   list-style: none;
   padding: 4px;
