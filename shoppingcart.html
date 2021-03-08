@@ -10,6 +10,10 @@
     <!--Font style from google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
+    <!--Icon library from w3 schools-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Buttons from W3 Schools-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <title>Xiang Tea Website</title>
     <link rel="stylesheet" type="text/css" href="style/test.css"/>
@@ -21,12 +25,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+
     <!--for hamburger-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--mine-->
     <link rel="stylesheet" type="text/css" href="style/main.css" />
 
-<wrapper class="d-flex flex-column">
 
 <div class="page">
   <div class="container">
@@ -216,7 +222,14 @@
           <div class="container-fluid" id="hamburgernav">
             <a class="nav-link" href="index.html"><img src="images/xianglogoround.png" alt="Xiang Tea Logo" class="logoborder centerlogo"></a>
 
-              <button class="hamburger" id="hamburger">
+              <!--<button class="hamburger" id="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fas fa-bars"></i>
+                </a>
+              </button>-->
+
+              <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fas fa-bars"></i>
                 </a>
@@ -312,73 +325,116 @@
     </header>
 
 <!--MAIN PAGE BODY-->
-<div class="container-fluid" style="margin-top: 6em;">
-  <section class="giveheight">
-    <h3> Green Tea </h3>
-      <div class="row columngap">
-        <div class="boxed teacolumn">
-          <a href="teapage.html">
-            <span class="linktotea"></span>
+<div class="container">
+  <div>
+    <h3 class="forms">Shopping Cart</h3>
+  </div>
+  <!--Left Column-->
+  <div class="row columngapcart">
+    <div class="col-6">
+      <table class="boxed" style="width:100%; margin-left: 5em;">
+        <tr>
+          <td>
+            <img src="images/teaimages/blackassam.jpg" alt="tea_purchase" class="boxed2" style="height: 7em; margin: 1em;">
+          </td>
+          <td>
+            <h4 class="table">Item 1</h4>
+          </td>
+          <td>
+            <h4 class="table">Price</h4>
+          </td>
+          <td>
+            <div class="number-input md-number-input">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+              <input class="quantity" min="0" name="quantity" value="1" type="number">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table class="boxed" style="width:100%; margin-left: 5em;">
+        <tr>
+          <td>
+            <img src="images/teaimages/blackassam.jpg" alt="tea_purchase" class="boxed2" style="height: 7em; margin: 1em;">
+          </td>
+          <td>
+            <h4 class="table">Item 1</h4>
+          </td>
+          <td>
+            <h4 class="table">Price</h4>
+          </td>
+          <td>
+            <div class="number-input md-number-input">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+              <input class="quantity" min="0" name="quantity" value="1" type="number">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table class="boxed" style="width:100%; margin-left: 5em;">
+        <tr>
+          <td>
+            <img src="images/teaimages/blackassam.jpg" alt="tea_purchase" class="boxed2" style="height: 7em; margin: 1em;">
+          </td>
+          <td>
+            <h4 class="table">Item 1</h4>
+          </td>
+          <td>
+            <h4 class="table">Price</h4>
+          </td>
+          <td>
+            <div class="number-input md-number-input">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+              <input class="quantity" min="0" name="quantity" value="1" type="number">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!--Right Column-->
+    <div class="col-4 boxed" style="width:100%; margin-left: 4em;">
+      <p>
+        <h3>Order Summary</h3>
+      </p>
+      <p>
+        <h4 class="cart">Subtotal</h4>
+      </p>
+      <p>
+        <h4 class="cart">Tax</h4>
+      </p>
+      <p>
+        <h4 class="cart">Shipping</h4>
+      </p>
+      <p>
+        <h4 class="cart">TOTAL</h4>
+      </p>
+
+      <div>
+        <form>
+          <button type="submit" formaction="checkoutshipping.html" class="submitbtn" style="width:80%; margin-left: 2em;">
+            Checkout
+          </button>
+          <br>
+          <a href="https://www.paypal.com/us/signin">
+            <button type="button" class="paypalbackground">
+              <img src=images/paypal.jpg class="paypal">
+            </button>
           </a>
-          Bancha Tea Organic (China)
-          <div>
-            <img src="images/teaimages/greenbancha.jpg" alt="Bancha Tea Organic (China)" class="teaimage">
-          </div>
-          Price
-        </div>
-        <div class="boxed teacolumn">
-          <a href="teapage.html">
-            <span class="linktotea"></span>
-          </a>
-          Chunmee Green Tea Organic
-          <div>
-            <img src="images/teaimages/greenchunmee.jpg" alt="Chunmee Green Tea Organic" class="teaimage">
-          </div>
-          Price
-        </div>
-        <div class="teacolumn boxed">
-          <a href="teapage.html">
-            <span class="linktotea"></span>
-          </a>
-          Dragonwell Tea Organic
-          <div>
-            <img src="images/teaimages/greendragonwell.jpg" alt="Dragonwell Tea Organic" class="teaimage">
-          </div>
-          Price
-        </div>
-        <div class="teacolumn boxed">
-          <a href="teapage.html">
-            <span class="linktotea"></span>
-          </a>
-          Earl Grey Green Tea Organic, Fair Trade
-          <div>
-            <img src="images/teaimages/greenearlgrey.jpg" alt="Earl Grey Green Tea Organic, Fair Trade" class="teaimage">
-          </div>
-          Price
-        </div>
-        <div class="teacolumn boxed">
-          <a href="teapage.html">
-            <span class="linktotea"></span>
-          </a>
-          Jasmine Pearls Tea Organic
-          <div>
-            <img src="images/teaimages/greenjasminepearls.jpg" alt="Jasmine Pearls Tea Organic" class="teaimage">
-          </div>
-          Price
-        </div>
-        <div class="teacolumn boxed">
-          <a href="teapage.html">
-            <span class="linktotea"></span>
-          </a>
-          Jasmine Tea Organic
-          <div>
-            <img src="images/teaimages/greenjasmine.jpg" alt="Jasmine Tea Organic" class="teaimage">
-          </div>
-          Price
-        </div>
+        </form>
       </div>
-  </section>
-</div>
+
+    </div> <!--right column-->
+  </div> <!--row-->
+</div> <!--main body container-->
+
+  </div>
+</div> <!--(page container)-->
+
 
 
 <!--Search Bar-->
@@ -393,159 +449,159 @@
     </div>
 
 
-<!--Bottom Nav Bar-->
-<!--Laptop-->
-<div class="container-fluid" id="laptopfooter" >
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <!--Bottom Nav Bar-->
+    <!--Laptop-->
+    <div class="container-fluid" id="laptopfooter">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
 
-      <ul>
-        <li class="nav-item footerleft">
-          <a class="nav-link active btn-navbar" style="margin-top: 1em" href="shipping.html">Shipping & Returns</a>
-        </li>
-        <br>
-        <li class="nav-item footerleft">
-          <a class="nav-link active btn-navbar" href="packaging.html">Packaging</a>
-        </li>
-        <br>
-        <li class="nav-item footerleft">
-          <a class="nav-link active btn-navbar" href="faqs.html">FAQ's</a>
-        </li>
-        <br>
-        <li class="nav-item footerleft">
-          <a class="nav-link active btn-navbar" href="contactus.html">Contact Us</a>
-        </li>
-      </ul>
-
-          <li class="nav-item footercenter">
-            <section>
-              <img src="images/tealeaf.png" alt="Xiang Page Tea Leaf" class="centerleaf">
-              <div class="text-block centerleaftext">Customer Care</div>
-            </section>
-          </li>
-
-          <ul class="footerright">
-            <li class="nav-item footerright">
-              <a class="nav-link socialmedia" href="https://www.facebook.com/"><img src="images/facebooksmall.png" alt="Facebook Link" width="35" height="35"></a>
+          <ul>
+            <li class="nav-item footerleft">
+              <a class="nav-link active btn-navbar" style="margin-top: 1em" href="shipping.html">Shipping & Returns</a>
             </li>
-            <li class="nav-item footerright">
-              <a class="nav-link" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Link" width="35" height="35"></a>
+            <br>
+            <li class="nav-item footerleft">
+              <a class="nav-link active btn-navbar" href="packaging.html">Packaging</a>
             </li>
-            <li class="nav-item footerright">
-              <a class="nav-link" href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Link" width="35" height="35"></a>
+            <br>
+            <li class="nav-item footerleft">
+              <a class="nav-link active btn-navbar" href="faqs.html">FAQ's</a>
             </li>
-            <li class="nav-item footerright">
-              <a class="nav-link" href="https://www.pinterest.com/"><img src="images/pinterestsmall.png" alt="Pinterest Link" width="35" height="35"></a>
-            </li>
-            <li class="nav-item footerright">
-              <a class="nav-link" href="https://www.gmail.com/"><img src="images/emailsmall.png" alt="Email Link" width="35" height="35"></a>
+            <br>
+            <li class="nav-item footerleft">
+              <a class="nav-link active btn-navbar" href="contactus.html">Contact Us</a>
             </li>
           </ul>
 
+              <li class="nav-item footercenter">
+                <section>
+                  <img src="images/tealeaf.png" alt="Xiang Page Tea Leaf" class="centerleaf">
+                  <div class="text-block centerleaftext">Customer Care</div>
+                </section>
+              </li>
+
+              <ul class="footerright">
+                <li class="nav-item footerright">
+                  <a class="nav-link socialmedia" href="https://www.facebook.com/"><img src="images/facebooksmall.png" alt="Facebook Link" width="35" height="35"></a>
+                </li>
+                <li class="nav-item footerright">
+                  <a class="nav-link" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Link" width="35" height="35"></a>
+                </li>
+                <li class="nav-item footerright">
+                  <a class="nav-link" href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Link" width="35" height="35"></a>
+                </li>
+                <li class="nav-item footerright">
+                  <a class="nav-link" href="https://www.pinterest.com/"><img src="images/pinterestsmall.png" alt="Pinterest Link" width="35" height="35"></a>
+                </li>
+                <li class="nav-item footerright">
+                  <a class="nav-link" href="https://www.gmail.com/"><img src="images/emailsmall.png" alt="Email Link" width="35" height="35"></a>
+                </li>
+              </ul>
+
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
 
-<!--Tablet-->
-<div class="container-fluid" id="tabletfooter">
-  <nav class="nav flex-column">
-    <div class="container-fluid">
+    <!--Tablet-->
+    <div class="container-fluid tabletfooter" id="tabletfooter">
+      <nav class="nav flex-column">
+        <div class="container-fluid">
 
-      <ul>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar" style="margin-top: 2em" href="#">Shipping & Returns</a>
-        </li>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar" href="#">Packaging</a>
-        </li>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar" href="#">FAQ's</a>
-        </li>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar"  style="margin-bottom: 2em" href="#">Contact Us</a>
-        </li>
-      </ul>
+          <ul>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar" style="margin-top: 2em" href="#">Shipping & Returns</a>
+            </li>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar" href="#">Packaging</a>
+            </li>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar" href="#">FAQ's</a>
+            </li>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar"  style="margin-bottom: 2em" href="#">Contact Us</a>
+            </li>
+          </ul>
 
-        <li class="nav-item footercenter">
-          <section>
-            <img src="images/tealeaf.png" alt="Xiang Page Tea Leaf" class="centerleaf">
-              <div class="text-block centerleaftext">Customer Care</div>
-          </section>
-        </li>
+            <li class="nav-item footercenter">
+              <section>
+                <img src="images/tealeaf.png" alt="Xiang Page Tea Leaf" class="centerleaf">
+                  <div class="text-block centerleaftext">Customer Care</div>
+              </section>
+            </li>
 
-        <ul style="margin: 0 auto">
-          <li class="nav-item footerright">
-            <a class="nav-link socialmedia" href="https://www.facebook.com/"><img src="images/facebooksmall.png" alt="Facebook Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://www.pinterest.com/"><img src="images/pinterestsmall.png" alt="Pinterest Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://www.gmail.com/"><img src="images/emailsmall.png" alt="Email Link" width="35" height="35"></a>
-          </li>
-        </ul>
+            <ul style="margin: 0 auto">
+              <li class="nav-item footerright">
+                <a class="nav-link socialmedia" href="https://www.facebook.com/"><img src="images/facebooksmall.png" alt="Facebook Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://www.pinterest.com/"><img src="images/pinterestsmall.png" alt="Pinterest Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://www.gmail.com/"><img src="images/emailsmall.png" alt="Email Link" width="35" height="35"></a>
+              </li>
+            </ul>
 
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
 
-<!--Mobile-->
-<div class="container-fluid" id="mobilefooter">
-  <nav class="nav flex-column">
-    <div class="container-fluid">
+    <!--Mobile-->
+    <div class="container-fluid mobilefooter" id="mobilefooter">
+      <nav class="nav flex-column">
+        <div class="container-fluid">
 
-      <ul>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar" style="margin-top: 2em" href="#">Shipping & Returns</a>
-        </li>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar" href="#">Packaging</a>
-        </li>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar" href="#">FAQ's</a>
-        </li>
-        <li class="nav-item footercenter">
-          <a class="nav-link active btn-navbar"  style="margin-bottom: 2em" href="#">Contact Us</a>
-        </li>
-      </ul>
+          <ul>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar" style="margin-top: 2em" href="#">Shipping & Returns</a>
+            </li>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar" href="#">Packaging</a>
+            </li>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar" href="#">FAQ's</a>
+            </li>
+            <li class="nav-item footercenter">
+              <a class="nav-link active btn-navbar"  style="margin-bottom: 2em" href="#">Contact Us</a>
+            </li>
+          </ul>
 
-        <li class="nav-item footercenter">
-          <section>
-            <img src="images/tealeaf.png" alt="Xiang Page Tea Leaf" class="centerleaf">
-              <div class="text-block centerleaftext">Customer Care</div>
-          </section>
-        </li>
+            <li class="nav-item footercenter">
+              <section>
+                <img src="images/tealeaf.png" alt="Xiang Page Tea Leaf" class="centerleaf">
+                  <div class="text-block centerleaftext">Customer Care</div>
+              </section>
+            </li>
 
-        <ul class="footerright">
-          <li class="nav-item footerright">
-            <a class="nav-link socialmedia" href="https://www.facebook.com/"><img src="images/facebooksmall.png" alt="Facebook Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://www.pinterest.com/"><img src="images/pinterestsmall.png" alt="Pinterest Link" width="35" height="35"></a>
-          </li>
-          <li class="nav-item footerright">
-            <a class="nav-link" href="https://www.gmail.com/"><img src="images/emailsmall.png" alt="Email Link" width="35" height="35"></a>
-          </li>
-        </ul>
+            <ul class="footerright">
+              <li class="nav-item footerright">
+                <a class="nav-link socialmedia" href="https://www.facebook.com/"><img src="images/facebooksmall.png" alt="Facebook Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://www.pinterest.com/"><img src="images/pinterestsmall.png" alt="Pinterest Link" width="35" height="35"></a>
+              </li>
+              <li class="nav-item footerright">
+                <a class="nav-link" href="https://www.gmail.com/"><img src="images/emailsmall.png" alt="Email Link" width="35" height="35"></a>
+              </li>
+            </ul>
 
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
 
-  </div>
-</div>
+</div> <!--container by page div-->
+</div> <!--(page div)-->
 
 <footer>
   <hr>
