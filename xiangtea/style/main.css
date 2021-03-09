@@ -637,10 +637,12 @@ input[type=submit]:hover {
 .password:link, .password:visited, .password:focus{
   color: #496949;
   font-family: 'Alegreya SC', serif;
+  text-decoration: none;
 }
 .password:hover, .password:active{
   color: #496949;
   font-family: 'Alegreya SC', serif;
+  text-decoration: none;
   font-weight: 600;
 }
 .centercontents {

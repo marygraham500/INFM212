@@ -26,290 +26,283 @@
     <!--mine-->
     <link rel="stylesheet" type="text/css" href="style/main.css" />
 
-<wrapper class="d-flex flex-column">
+    <div class="page">
+      <div class="container">
 
-<div class="page">
-  <div class="container">
+    <!--Nav Bar-->
+        <header>
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top">
 
-<!--Nav Bar-->
-    <header>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg fixed-top">
+              <!--Laptop navigation-->
+              <div class="container-fluid" id="laptopnav">
 
-          <!--Laptop navigation-->
-          <div class="container-fluid" id="laptopnav">
+                <div class="navbar"> <!--left half  NAVBAR CLASS MAKES IT HORIZONTAL-->
 
-            <div class="navbar"> <!--left half  NAVBAR CLASS MAKES IT HORIZONTAL-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn-navbar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item btn-navbar" href="aboutus.html">Our Story</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="aboutus.html">Sourcing: Our Farm</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="aboutus.html#organic">Why Organic?</a></li>
+                      </ul>
+                  </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle btn-navbar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item btn-navbar" href="aboutus.html">Our Story</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="aboutus.html">Sourcing: Our Farm</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="aboutus.html#organic">Why Organic?</a></li>
-                  </ul>
-              </li>
+                  <div class="dropdown">
+                    <button class="btn btn-navbar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Teas</button>
+                      <ul class="dropdown-menu multi-level btn-navbar" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="dropdown-submenu btn-navbar">
+                          <a  class="dropdown-item btn-navbar" tabindex="-1" href="">Loose-Leaf Teas</a>
+                            <ul class="dropdown-menu btn-navbar">
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="whiteteas.html" class="teanamecolor">White Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="blackteas.html" class="teanamecolor">Black Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="chaiteas.html" class="teanamecolor">Chai Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="greenteas.html" class="teanamecolor">Green Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="oolongteas.html" class="teanamecolor">Oolong Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="herbalteas.html" class="teanamecolor">Herbal Tea</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu btn-navbar">
+                          <a class="dropdown-item btn-navbar" href="#">Herbal Wellness Teas</a>
+                            <ul class="dropdown-menu btn-navbar">
+                              <li class="dropdown-item btn-navbar"><a href="colddefense.html" class="teanamecolor">Cold & Defense</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="detoxdigestion.html" class="teanamecolor">Detox & Digestion</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="sleeprelaxation.html" class="teanamecolor">Sleep & Relaxation</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="alertnessfocus.html" class="teanamecolor">Alertness & Focus</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="hydrationglow.html" class="teanamecolor">Hydration & Glow</a></li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </div>
 
-              <div class="dropdown">
-                <button class="btn btn-navbar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Teas</button>
-                  <ul class="dropdown-menu multi-level btn-navbar" role="menu" aria-labelledby="dropdownMenu">
-                    <li class="dropdown-submenu btn-navbar">
-                      <a  class="dropdown-item btn-navbar" tabindex="-1" href="">Loose-Leaf Teas</a>
-                        <ul class="dropdown-menu btn-navbar">
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="whiteteas.html" class="teanamecolor">White Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="blackteas.html" class="teanamecolor">Black Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="chaiteas.html" class="teanamecolor">Chai Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="greenteas.html" class="teanamecolor">Green Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="oolongteas.html" class="teanamecolor">Oolong Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="herbalteas.html" class="teanamecolor">Herbal Tea</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teaware & Gifts</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item btn-navbar" href="teabag.html">Teabags & Strainers</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="teapots.html">Teapots & Kettles</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="teamugs.html">Teacups & Mugs</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="giftsets.html">Gift Sets</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="giftcards.html">Gift Cards</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown-submenu btn-navbar">
-                      <a class="dropdown-item btn-navbar" href="#">Herbal Wellness Teas</a>
-                        <ul class="dropdown-menu btn-navbar">
-                          <li class="dropdown-item btn-navbar"><a href="colddefense.html" class="teanamecolor">Cold & Defense</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="detoxdigestion.html" class="teanamecolor">Detox & Digestion</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="sleeprelaxation.html" class="teanamecolor">Sleep & Relaxation</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="alertnessfocus.html" class="teanamecolor">Alertness & Focus</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="hydrationglow.html" class="teanamecolor">Hydration & Glow</a></li>
+
+                </div> <!--closes left half-->
+
+                  <!--LOGO-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html"><img src="images/xianglogoround.png" alt="Xiang Tea Logo" class="logoborder centerlogo"></a>
+                  </li>
+
+                <div class="navbar"> <!--right half  NAVBAR CLASS MAKES IT HORIZONTAL-->
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item btn-navbar" href="#">"Frequent-Steeper" Club</a></li>
+                      </ul>
+                    </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account/Login</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item btn-navbar" href="login.html">Login/Register</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="login.html">My Account</a></li>
+
                         </ul>
                     </li>
-                  </ul>
-                </div>
 
-              <li class="nav-item dropdown">
-                  <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teaware & Gifts</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item btn-navbar" href="teabag.html">Teabags & Strainers</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="teapots.html">Teapots & Kettles</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="teamugs.html">Teacups & Mugs</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="giftsets.html">Gift Sets</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="giftcards.html">Gift Cards</a></li>
+                    <li class="nav-item">
+                      <a href="shoppingcart.html" aria-expanded="false" class="password">Shopping Cart</a>
+                    </li>
+
+                </div> <!--closes right half-->
+
+              </div>
+
+              <!--Tablet navigation
+              <div class="container-fluid" id="tabletnav">
+
+                <div> <!--left half  NAVBAR CLASS MAKES IT HORIZONTAL
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn-navbar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item btn-navbar" href="#">Our Story</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="#">Sourcing: Our Farm</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="#">Why Organic?</a></li>
+                      </ul>
+                  </li>
+
+                  <div class="dropdown">
+                    <button class="btn btn-navbar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Our Teas
+                    </button>
+                      <ul class="dropdown-menu multi-level btn-navbar" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="dropdown-submenu btn-navbar">
+                          <a  class="dropdown-item btn-navbar" tabindex="-1" href="">Loose-Leaf Teas</a>
+                            <ul class="dropdown-menu btn-navbar">
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="whiteteas.html" class="teanamecolor">White Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="blackteas.html" class="teanamecolor">Black Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="chaiteas.html" class="teanamecolor">Chai Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="greenteas.html" class="teanamecolor">Green Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="oolongteas.html" class="teanamecolor">Oolong Tea</a></li>
+                              <li class="dropdown-item btn-navbar"><a tabindex="-1" href="herbalteas.html" class="teanamecolor">Herbal Tea</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu btn-navbar">
+                          <a class="dropdown-item btn-navbar" href="#">Herbal Wellness Teas</a>
+                            <ul class="dropdown-menu btn-navbar">
+                              <li class="dropdown-item btn-navbar"><a href="colddefense.html" class="teanamecolor">Cold & Defense</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="detoxdigestion.html" class="teanamecolor">Detox & Digestion</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="sleeprelaxation.html" class="teanamecolor">Sleep & Relaxation</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="alertnessfocus.html" class="teanamecolor">Alertness & Focus</a></li>
+                              <li class="dropdown-item btn-navbar"><a href="hydrationglow.html" class="teanamecolor">Hydration & Glow</a></li>
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teaware & Gifts</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item btn-navbar" href="teabag.html">Teabags & Strainers</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="teapots.html">Teapots & Kettles</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="teamugs.html">Teacups & Mugs</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="giftsets.html">Gift Sets</a></li>
+                        <li><a class="dropdown-item btn-navbar" href="giftcards.html">Gift Cards</a></li>
+                      </ul>
+                  </li>
+
+                </div> <!--closes left half
+
+                <!--LOGO
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><img src="images/xianglogoround.png" alt="Xiang Tea Logo" class="logoborder centerlogo"></a>
+                </li>
+
+                <div> <!--right half  NAVBAR CLASS MAKES IT HORIZONTAL
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item btn-navbar" href="#">"Frequent-Steeper" Club</a></li>
                     </ul>
-                </li>
+                  </li>
 
-            </div> <!--closes left half-->
-
-              <!--LOGO-->
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"><img src="images/xianglogoround.png" alt="Xiang Tea Logo" class="logoborder centerlogo"></a>
-              </li>
-
-            <div class="navbar"> <!--right half  NAVBAR CLASS MAKES IT HORIZONTAL-->
-
-              <li class="nav-item dropdown">
-                  <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item btn-navbar" href="#">"Frequent-Steeper" Club</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
+                  <li class="nav-item dropdown">
                     <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account/Login</a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item btn-navbar" href="login.html">Login/Register</a></li>
                         <li><a class="dropdown-item btn-navbar" href="login.html">My Account</a></li>
-
                       </ul>
-                </li>
+                  </li>
 
-                <li class="nav-item dropdown">
+                  <li class="nav-item dropdown">
                     <a class="nav-link btn-navbar dropdown-toggle" href="login.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shopping Cart</a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item btn-navbar" href="checkoutshipping.html">Checkout</a></li>
                       </ul>
-                </li>
+                  </li>
 
-            </div> <!--closes right half-->
-
-          </div>
-
-          <!--Tablet navigation-->
-          <div class="container-fluid" id="tabletnav">
-
-            <div> <!--left half  NAVBAR CLASS MAKES IT HORIZONTAL-->
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle btn-navbar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item btn-navbar" href="#">Our Story</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="#">Sourcing: Our Farm</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="#">Why Organic?</a></li>
-                  </ul>
-              </li>
-
-              <div class="dropdown">
-                <button class="btn btn-navbar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Our Teas
-                </button>
-                  <ul class="dropdown-menu multi-level btn-navbar" role="menu" aria-labelledby="dropdownMenu">
-                    <li class="dropdown-submenu btn-navbar">
-                      <a  class="dropdown-item btn-navbar" tabindex="-1" href="">Loose-Leaf Teas</a>
-                        <ul class="dropdown-menu btn-navbar">
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="whiteteas.html" class="teanamecolor">White Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="blackteas.html" class="teanamecolor">Black Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="chaiteas.html" class="teanamecolor">Chai Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="greenteas.html" class="teanamecolor">Green Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="oolongteas.html" class="teanamecolor">Oolong Tea</a></li>
-                          <li class="dropdown-item btn-navbar"><a tabindex="-1" href="herbalteas.html" class="teanamecolor">Herbal Tea</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-submenu btn-navbar">
-                      <a class="dropdown-item btn-navbar" href="#">Herbal Wellness Teas</a>
-                        <ul class="dropdown-menu btn-navbar">
-                          <li class="dropdown-item btn-navbar"><a href="colddefense.html" class="teanamecolor">Cold & Defense</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="detoxdigestion.html" class="teanamecolor">Detox & Digestion</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="sleeprelaxation.html" class="teanamecolor">Sleep & Relaxation</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="alertnessfocus.html" class="teanamecolor">Alertness & Focus</a></li>
-                          <li class="dropdown-item btn-navbar"><a href="hydrationglow.html" class="teanamecolor">Hydration & Glow</a></li>
-                        </ul>
-                    </li>
-                  </ul>
+                </div> <!--closes right half
               </div>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teaware & Gifts</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item btn-navbar" href="teabag.html">Teabags & Strainers</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="teapots.html">Teapots & Kettles</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="teamugs.html">Teacups & Mugs</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="giftsets.html">Gift Sets</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="giftcards.html">Gift Cards</a></li>
-                  </ul>
-              </li>
+              <!--Hamburger navigation
+              <div class="container-fluid" id="hamburgernav">
+                <a class="nav-link" href="index.html"><img src="images/xianglogoround.png" alt="Xiang Tea Logo" class="logoborder centerlogo"></a>
 
-            </div> <!--closes left half-->
+                  <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fas fa-bars"></i>
+                    </a>
+                  </button>
 
-            <!--LOGO-->
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"><img src="images/xianglogoround.png" alt="Xiang Tea Logo" class="logoborder centerlogo"></a>
-            </li>
+                <!-- Links
+                <div class="nav-ul" id="nav-ul">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle btn-navbar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item btn-navbar" href="#">Our Story</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="#">Sourcing: Our Farm</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="#">Why Organic?</a></li>
+                        </ul>
+                    </li>
 
-            <div> <!--right half  NAVBAR CLASS MAKES IT HORIZONTAL-->
+                    <div class="dropdown">
+                      <button class="btn btn-navbar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Teas</button>
+                        <ul class="dropdown-menu multi-level btn-navbar" role="menu" aria-labelledby="dropdownMenu">
+                          <li class="dropdown-submenu btn-navbar">
+                            <a  class="dropdown-item btn-navbar" tabindex="-1" href="">Loose-Leaf Teas</a>
+                              <ul class="dropdown-menu btn-navbar">
+                                <li class="dropdown-item btn-navbar"><a tabindex="-1" href="whiteteas.html" class="teanamecolor">White Tea</a></li>
+                                <li class="dropdown-item btn-navbar"><a tabindex="-1" href="blackteas.html" class="teanamecolor">Black Tea</a></li>
+                                <li class="dropdown-item btn-navbar"><a tabindex="-1" href="chaiteas.html" class="teanamecolor">Chai Tea</a></li>
+                                <li class="dropdown-item btn-navbar"><a tabindex="-1" href="greenteas.html" class="teanamecolor">Green Tea</a></li>
+                                <li class="dropdown-item btn-navbar"><a tabindex="-1" href="oolongteas.html" class="teanamecolor">Oolong Tea</a></li>
+                                <li class="dropdown-item btn-navbar"><a tabindex="-1" href="herbalteas.html" class="teanamecolor">Herbal Tea</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown-submenu btn-navbar">
+                            <a class="dropdown-item btn-navbar" href="#">Herbal Wellness Teas</a>
+                              <ul class="dropdown-menu btn-navbar">
+                                <li class="dropdown-item btn-navbar"><a href="colddefense.html" class="teanamecolor">Cold & Defense</a></li>
+                                <li class="dropdown-item btn-navbar"><a href="detoxdigestion.html" class="teanamecolor">Detox & Digestion</a></li>
+                                <li class="dropdown-item btn-navbar"><a href="sleeprelaxation.html" class="teanamecolor">Sleep & Relaxation</a></li>
+                                <li class="dropdown-item btn-navbar"><a href="alertnessfocus.html" class="teanamecolor">Alertness & Focus</a></li>
+                                <li class="dropdown-item btn-navbar"><a href="hydrationglow.html" class="teanamecolor">Hydration & Glow</a></li>
+                              </ul>
+                          </li>
+                        </ul>
+                    </div>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item btn-navbar" href="#">"Frequent-Steeper" Club</a></li>
-                </ul>
-              </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teaware & Gifts</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item btn-navbar" href="teabag.html">Teabags & Strainers</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="teapots.html">Teapots & Kettles</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="teamugs.html">Teacups & Mugs</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="giftsets.html">Gift Sets</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="giftcards.html">Gift Cards</a></li>
+                        </ul>
+                    </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account/Login</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item btn-navbar" href="login.html">Login/Register</a></li>
-                    <li><a class="dropdown-item btn-navbar" href="login.html">My Account</a></li>
-                  </ul>
-              </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item btn-navbar" href="#">"Frequent-Steeper" Club</a></li>
+                      </ul>
+                    </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link btn-navbar dropdown-toggle" href="login.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shopping Cart</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item btn-navbar" href="checkoutshipping.html">Checkout</a></li>
-                  </ul>
-              </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account/Login</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item btn-navbar" href="login.html">Login/Register</a></li>
+                          <li><a class="dropdown-item btn-navbar" href="login.html">My Account</a></li>
+                        </ul>
+                    </li>
 
-            </div> <!--closes right half-->
-          </div>
+                    <li class="nav-item">
+                      <a href="shoppingcart.html" role="button" aria-expanded="false">Shopping Cart</a>
+                    </li>
 
-          <!--Hamburger navigation-->
-          <div class="container-fluid" id="hamburgernav">
-            <a class="nav-link" href="index.html"><img src="images/xianglogoround.png" alt="Xiang Tea Logo" class="logoborder centerlogo"></a>
-
-              <button class="hamburger" id="hamburger">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fas fa-bars"></i>
-                </a>
-              </button>
-
-            <!-- Links -->
-            <div class="nav-ul" id="nav-ul">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle btn-navbar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item btn-navbar" href="#">Our Story</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="#">Sourcing: Our Farm</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="#">Why Organic?</a></li>
-                    </ul>
-                </li>
-
-                <div class="dropdown">
-                  <button class="btn btn-navbar dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Teas</button>
-                    <ul class="dropdown-menu multi-level btn-navbar" role="menu" aria-labelledby="dropdownMenu">
-                      <li class="dropdown-submenu btn-navbar">
-                        <a  class="dropdown-item btn-navbar" tabindex="-1" href="">Loose-Leaf Teas</a>
-                          <ul class="dropdown-menu btn-navbar">
-                            <li class="dropdown-item btn-navbar"><a tabindex="-1" href="whiteteas.html" class="teanamecolor">White Tea</a></li>
-                            <li class="dropdown-item btn-navbar"><a tabindex="-1" href="blackteas.html" class="teanamecolor">Black Tea</a></li>
-                            <li class="dropdown-item btn-navbar"><a tabindex="-1" href="chaiteas.html" class="teanamecolor">Chai Tea</a></li>
-                            <li class="dropdown-item btn-navbar"><a tabindex="-1" href="greenteas.html" class="teanamecolor">Green Tea</a></li>
-                            <li class="dropdown-item btn-navbar"><a tabindex="-1" href="oolongteas.html" class="teanamecolor">Oolong Tea</a></li>
-                            <li class="dropdown-item btn-navbar"><a tabindex="-1" href="herbalteas.html" class="teanamecolor">Herbal Tea</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown-submenu btn-navbar">
-                        <a class="dropdown-item btn-navbar" href="#">Herbal Wellness Teas</a>
-                          <ul class="dropdown-menu btn-navbar">
-                            <li class="dropdown-item btn-navbar"><a href="colddefense.html" class="teanamecolor">Cold & Defense</a></li>
-                            <li class="dropdown-item btn-navbar"><a href="detoxdigestion.html" class="teanamecolor">Detox & Digestion</a></li>
-                            <li class="dropdown-item btn-navbar"><a href="sleeprelaxation.html" class="teanamecolor">Sleep & Relaxation</a></li>
-                            <li class="dropdown-item btn-navbar"><a href="alertnessfocus.html" class="teanamecolor">Alertness & Focus</a></li>
-                            <li class="dropdown-item btn-navbar"><a href="hydrationglow.html" class="teanamecolor">Hydration & Glow</a></li>
-                          </ul>
-                      </li>
-                    </ul>
                 </div>
+              </div>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teaware & Gifts</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item btn-navbar" href="teabag.html">Teabags & Strainers</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="teapots.html">Teapots & Kettles</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="teamugs.html">Teacups & Mugs</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="giftsets.html">Gift Sets</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="giftcards.html">Gift Cards</a></li>
-                    </ul>
-                </li>
+              <script>
+              function myFunction() {
+                var x = document.getElementById("nav-ul");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+            </script>-->
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item btn-navbar" href="#">"Frequent-Steeper" Club</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link btn-navbar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account/Login</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item btn-navbar" href="login.html">Login/Register</a></li>
-                      <li><a class="dropdown-item btn-navbar" href="login.html">My Account</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link btn-navbar dropdown-toggle" href="login.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shopping Cart</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item btn-navbar" href="checkoutshipping.html">Checkout</a></li>
-                    </ul>
-                </li>
-
-            </div>
+            </nav>
           </div>
-
-          <script>
-          function myFunction() {
-            var x = document.getElementById("nav-ul");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
-          }
-          </script>
-
-        </nav>
-      </div>
-    </header>
+        </header>
 
 <!--MAIN PAGE BODY-->
 <div class="container-fluid" style="margin-top: 6em;">
