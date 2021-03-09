@@ -503,10 +503,17 @@ form label {
 }
 form input {
   margin-bottom: 5px;
+  border: 1px solid #496949;
+  color: #496949;
 }
 .form{
   margin: 0.25em 0 0 0;
 }
+:required  {
+background: url(https://cdn0.iconfinder.com/data/icons/fugue/icon/asterisk-small.png) no-repeat;
+background-position:right top;
+}
+
 
 /*Individual Tea page*/
 /*may need to change color for hover*/

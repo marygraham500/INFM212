@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
 
+    <!--Asterisks-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
     <title>Xiang Tea Website</title>
     <link rel="stylesheet" type="text/css" href="style/test.css"/>
   </head>
@@ -25,7 +28,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--mine-->
     <link rel="stylesheet" type="text/css" href="style/main.css" />
-
+    <!--Asterisks-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <div class="container">
 <!--Nav Bar-->
@@ -321,20 +326,20 @@
         <div class="boxed">
           <form class="formcontentcol6">
             <label for="fullname">First and Last Name:</label><br>
-            <input type="text" id="fullname" name="full_name" value="" style="width: 100%"><br>
+            <input type="text" id="ShippingName" name="full_name" value="" style="width: 100%" class="required"><br>
             <label for="address1">Address 1:</label><br>
-            <input type="text" id="address1" name="address1" value="" style="width: 100%"><br>
+            <input type="text" id="ShippingAddress1" name="address1" value="" style="width: 100%" class="required"><br>
             <label for="address2">Address 2:</label><br>
-            <input type="text" id="address2" name="address2" value="" style="width: 100%"><br>
+            <input type="text" id="ShippingAddress2" name="address2" value="" style="width: 100%"><br>
 
             <div class="row">
               <div class="colcity">
                 <label for="city">City:</label><br>
-                <input type="text" id="city" name="city" value="">
+                <input type="text" id="ShippingCity" name="city" value="" class="required">
               </div>
               <div class="colstate">
                 <label for="state">State:</label><br>
-                <select id="state" name="state" value="">
+                <select id="ShippingState" name="state" value="" class="required font">
                   <option value="AL">AL</option>
                   <option value="AK">AK</option>
                   <option value="AZ">AZ</option>
@@ -344,14 +349,14 @@
               </div>
               <div class="colzip">
                 <label for="zip">Zip:</label><br>
-                <input type="text" id="zip" name="zip" value=""><br>
+                <input type="text" id="ShippingZip" name="zip" value="" class="required"><br>
               </div>
             </div>
                 <!--<label> City: &nbsp; &nbsp; &nbsp;
                   State: &nbsp; &nbsp; &nbsp
                   Zip: </label>-->
             <label for=country>Country:</label><br>
-            <input type="text" id="country" name="country" value="" style="width: 100%"><br>
+            <input type="text" id="ShippingCountry" name="country" value="" style="width: 100%"><br>
             <label for="phone">Phone:</label><br>
             <input type="tel" name="password" value="" style="width: 100%"><br>
           </form>
@@ -384,24 +389,25 @@
       </div>
 
       <h4>Billing Information</h4>
-      <h4 style="margin-top: 0"><input type="checkbox" id="billingaddress" name="billingaddress" value="">
-      <label for="billingaddress">Billing address same as Shipping?</label><br></h4>
+      <h4 style="margin-top: 0">
+      <input type="checkbox" id="BillingAddress" onclick="SetBilling(this.checked);" name="billingaddress" value="">
+      <label for="BillingAddress">Billing address same as Shipping?</label><br></h4>
       <div class="boxed">
       <form class="formcontentcol6" action="index.html" method="post">
-        <label for="fullname">First and Last Name:</label><br>
-        <input type="text" id="fullname" name="full_name" value="" style="width: 100%"><br>
-        <label for="address1">Address 1:</label><br>
-        <input type="text" id="address1" name="address1" value="" style="width: 100%"><br>
-        <label for="address2">Address 2:</label><br>
-        <input type="text" id="address2" name="address2" value="" style="width: 100%"><br>
+        <label for="BillingName">First and Last Name:</label><br>
+        <input type="text" id="BillingName" name="full_name" value="" style="width: 100%"><br>
+        <label for="BillingAddress1">Address 1:</label><br>
+        <input type="text" id="BillingAddress1" name="address1" value="" style="width: 100%"><br>
+        <label for="BillingAddress2">Address 2:</label><br>
+        <input type="text" id="BillingAddress2" name="address2" value="" style="width: 100%"><br>
           <div class="row">
             <div class="colcity">
               <label for="city">City:</label><br>
-              <input type="text" id="city" name="city" value="">
+              <input type="text" id="BillingCity" name="city" value="">
             </div>
             <div class="colstate">
               <label for="state">State:</label><br>
-              <select id="state" name="state" value="">
+              <select id="BillingState" name="state" value="">
                 <option value="AL">AL</option>
                 <option value="AK">AK</option>
                 <option value="AZ">AZ</option>
@@ -411,15 +417,36 @@
             </div>
             <div class="colzip">
               <label for="zip">Zip:</label><br>
-              <input type="text" id="zip" name="zip" value=""><br>
+              <input type="text" id="BillingZip" name="zip" value=""><br>
             </div>
           </div>
           <label for=country>Country:</label><br>
-          <input type="text" id="country" name="country" value="" style="width: 100%"><br>
+          <input type="text" id="BillingCountry" name="country" value="" style="width: 100%"><br>
           <label for="phone">Phone:</label><br>
           <input type="tel" name="password" value="" style="width: 100%"><br>
       </form>
-      </div
+      </div>
+
+              <script type="text/javascript">
+                function SetBilling(checked) {
+                  if (checked) {
+                    document.getElementById('BillingName').value = document.getElementById('ShippingName').value;
+                    document.getElementById('BillingAddress1').value = document.getElementById('ShippingAddress1').value;
+                    document.getElementById('BillingAddress2').value = document.getElementById('ShippingAddress2').value;
+                    document.getElementById('BillingCity').value = document.getElementById('ShippingCity').value;
+                    document.getElementById('BillingState').value = document.getElementById('ShippingState').value;
+                    document.getElementById('BillingZip').value = document.getElementById('ShippingZip').value;
+                    document.getElementById('BillingCountry').value = document.getElementById('ShippingCountry').value;
+                  } else {
+                    document.getElementById('BillingAddress1').value = '';
+                    document.getElementById('BillingAddress2').value = '';
+                    document.getElementById('BillingCity').value = '';
+                    document.getElementById('BillingState').value = '';
+                    document.getElementById('BillingZip').value = '';
+                    document.getElementById('BillingCountry').value = '';
+                  }
+                }
+              </script>
 
       <h4>
       <h4>Add Gift Card or Promo Code</h4>
