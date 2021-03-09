@@ -11,9 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
 
-    <!--Asterisks-->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
     <title>Xiang Tea Website</title>
     <link rel="stylesheet" type="text/css" href="style/test.css"/>
   </head>
@@ -28,9 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--mine-->
     <link rel="stylesheet" type="text/css" href="style/main.css" />
-    <!--Asterisks-->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <div class="container">
 <!--Nav Bar-->
@@ -324,22 +318,22 @@
 
       <h4>Shipping Information</h4>
         <div class="boxed">
-          <form class="formcontentcol6">
-            <label for="fullname">First and Last Name:</label><br>
-            <input type="text" id="ShippingName" name="full_name" value="" style="width: 100%" class="required"><br>
-            <label for="address1">Address 1:</label><br>
-            <input type="text" id="ShippingAddress1" name="address1" value="" style="width: 100%" class="required"><br>
+          <form action="/action_page.php" class="formcontentcol6">
+            <label for="fullname">*First and Last Name:</label><br>
+            <input type="text" id="ShippingName" name="full_name" value="" style="width: 100%" required><br>
+            <label for="address1">*Address 1:</label><br>
+            <input type="text" id="ShippingAddress1" name="address1" value="" style="width: 100%" required><br>
             <label for="address2">Address 2:</label><br>
             <input type="text" id="ShippingAddress2" name="address2" value="" style="width: 100%"><br>
 
             <div class="row">
               <div class="colcity">
-                <label for="city">City:</label><br>
-                <input type="text" id="ShippingCity" name="city" value="" class="required">
+                <label for="city">*City:</label><br>
+                <input type="text" id="ShippingCity" name="city" value="" required>
               </div>
               <div class="colstate">
-                <label for="state">State:</label><br>
-                <select id="ShippingState" name="state" value="" class="required font">
+                <label for="state">*State:</label><br>
+                <select id="ShippingState" name="state" value="" class="font" required>
                   <option value="AL">AL</option>
                   <option value="AK">AK</option>
                   <option value="AZ">AZ</option>
@@ -348,15 +342,15 @@
                 </select>
               </div>
               <div class="colzip">
-                <label for="zip">Zip:</label><br>
-                <input type="text" id="ShippingZip" name="zip" value="" class="required"><br>
+                <label for="zip">*Zip:</label><br>
+                <input type="text" id="ShippingZip" name="zip" value="" required><br>
               </div>
             </div>
                 <!--<label> City: &nbsp; &nbsp; &nbsp;
                   State: &nbsp; &nbsp; &nbsp
                   Zip: </label>-->
-            <label for=country>Country:</label><br>
-            <input type="text" id="ShippingCountry" name="country" value="" style="width: 100%"><br>
+            <label for=country>*Country:</label><br>
+            <input type="text" id="ShippingCountry" name="country" value="" style="width: 100%" required><br>
             <label for="phone">Phone:</label><br>
             <input type="tel" name="password" value="" style="width: 100%"><br>
           </form>
@@ -364,23 +358,23 @@
 
       <h4>Payment Method</h4>
       <div class="boxed">
-      <form class="formcontentcol6" action="index.html" method="post">
-        <label for="cardnumber">Card Number:</label><br>
-        <input type="text" id="cardnumber" name="cardnumber" value="" style="width: 100%"><br>
-        <label for="nameoncard">Name on Card:</label><br>
-        <input type="text" id="nameoncard" name="nameoncard" value="" style="width: 100%"><br>
+      <form class="formcontentcol6" action="/action_page.php" method="post">
+        <label for="cardnumber">*Card Number:</label><br>
+        <input type="text" id="cardnumber" name="cardnumber" value="" style="width: 100%" required><br>
+        <label for="nameoncard">*Name on Card:</label><br>
+        <input type="text" id="nameoncard" name="nameoncard" value="" style="width: 100%" required><br>
           <div class="row">
             <div class="colcity">
-              <label for="expdate">Expiration Date:</label><br>
-              <input type="text" id="expdate" name="expdate" value="">
+              <label for="expdate">*Expiration Date:</label><br>
+              <input type="text" id="expdate" name="expdate" value="" required>
             </div>
             <div class="colstate">
-              <label for="cvc">CVC:</label><br>
-              <input type="text" id="cvc" name="cvc" value="">
+              <label for="cvc">*CVC:</label><br>
+              <input type="text" id="cvc" name="cvc" value="" required>
             </div>
             <div class="colzip">
-              <label for="zip">Zip:</label><br>
-              <input type="text" id="zip" name="zip" value=""><br>
+              <label for="zip">*Zip:</label><br>
+              <input type="text" id="zip" name="zip" value="" required><br>
             </div>
             <h4><input type="checkbox" id="remembercard" name="remembercard" value="">
             <label for="remembercard">Remember Card for Future Use?</label><br></h4>
@@ -393,21 +387,21 @@
       <input type="checkbox" id="BillingAddress" onclick="SetBilling(this.checked);" name="billingaddress" value="">
       <label for="BillingAddress">Billing address same as Shipping?</label><br></h4>
       <div class="boxed">
-      <form class="formcontentcol6" action="index.html" method="post">
-        <label for="BillingName">First and Last Name:</label><br>
-        <input type="text" id="BillingName" name="full_name" value="" style="width: 100%"><br>
-        <label for="BillingAddress1">Address 1:</label><br>
-        <input type="text" id="BillingAddress1" name="address1" value="" style="width: 100%"><br>
+      <form class="formcontentcol6" action="/action_page.php" method="post">
+        <label for="BillingName">*First and Last Name:</label><br>
+        <input type="text" id="BillingName" name="full_name" value="" style="width: 100%" required><br>
+        <label for="BillingAddress1">*Address 1:</label><br>
+        <input type="text" id="BillingAddress1" name="address1" value="" style="width: 100%" required><br>
         <label for="BillingAddress2">Address 2:</label><br>
-        <input type="text" id="BillingAddress2" name="address2" value="" style="width: 100%"><br>
+        <input type="text" id="BillingAddress2" name="address2" value="" style="width: 100%" required><br>
           <div class="row">
             <div class="colcity">
-              <label for="city">City:</label><br>
+              <label for="city">*City:</label><br>
               <input type="text" id="BillingCity" name="city" value="">
             </div>
             <div class="colstate">
-              <label for="state">State:</label><br>
-              <select id="BillingState" name="state" value="">
+              <label for="state">*State:</label><br>
+              <select id="BillingState" name="state" value="" required>
                 <option value="AL">AL</option>
                 <option value="AK">AK</option>
                 <option value="AZ">AZ</option>
@@ -416,12 +410,12 @@
               </select>
             </div>
             <div class="colzip">
-              <label for="zip">Zip:</label><br>
-              <input type="text" id="BillingZip" name="zip" value=""><br>
+              <label for="zip">*Zip:</label><br>
+              <input type="text" id="BillingZip" name="zip" value="" required><br>
             </div>
           </div>
-          <label for=country>Country:</label><br>
-          <input type="text" id="BillingCountry" name="country" value="" style="width: 100%"><br>
+          <label for=country>*Country:</label><br>
+          <input type="text" id="BillingCountry" name="country" value="" style="width: 100%" required><br>
           <label for="phone">Phone:</label><br>
           <input type="tel" name="password" value="" style="width: 100%"><br>
       </form>
@@ -459,7 +453,7 @@
 
       <h4>Choose a Shipping Method</h4>
       <div class="boxed">
-      <form class="formcontentcol6 radios" action="index.html" method="post">
+      <form class="formcontentcol6 radios" action="/action_page.php" method="post">
         <input type="radio" id="standardshipping" name="shipping" value="">
         Standard Shipping (5-7 Business Days)...Price<br>
         <input type="radio" id="expeditedshipping" name="shipping" value="">
@@ -490,9 +484,9 @@
       </p>
 
       <div>
-        <form>
-          <button type="submit" formaction="checkoutshipping.html" class="submitbtn" style="width:80%; margin-left: 2em;">
-            Checkout
+        <form> <!--Linked to Submission Modal-->
+          <button type="button" class="submitbtn" data-bs-toggle="modal" data-bs-target="#checkoutModal" style="width:80%; margin-left: 2em;">
+            Complete Purchase
           </button>
           <br>
           <a href="https://www.paypal.com/us/signin">
@@ -506,6 +500,34 @@
 
   </div>
 </div>
+
+                <!--Checkout Modal-->
+                <script>
+                  var myModal = document.getElementById('myModal')
+                  var myInput = document.getElementById('myInput')
+                    myModal.addEventListener('shown.bs.modal', function () {
+                      myInput.focus()
+                    })
+                </script>
+
+                <!--Checkout Modal-->
+                <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="checkoutModalLabel">Thank you for your order! <br> You will receive a confirmation email soon.</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-footer centercontents">
+                        <a href="index.html">
+                          <button type="button" class="btn btn-primary submitbtn">
+                            Return to Homepage
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 
 

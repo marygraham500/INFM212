@@ -509,10 +509,6 @@ form input {
 .form{
   margin: 0.25em 0 0 0;
 }
-:required  {
-background: url(https://cdn0.iconfinder.com/data/icons/fugue/icon/asterisk-small.png) no-repeat;
-background-position:right top;
-}
 
 
 /*Individual Tea page*/
@@ -549,6 +545,9 @@ input[type=submit]:hover {
 }
 .teacolumn1{
   margin-top: 7em;
+}
+.teacolumn2{
+  margin-top: 5em;
 }
 .sepcolumn{
   margin-top: 4em;
@@ -602,33 +601,48 @@ input[type=submit]:hover {
   border: none;
   display: inline-flex;
 }
-/* delete i think
-.submit_quantity {
-  background-color: #a5c0a5;
-  border: 2px solid #496949;
+#message {
+  display:none;
+  background-color: #496949;
+  border: 2px solid #d2e0d2;
   border-radius: 10px;
-  color: #496949;
-  font-weight: 600;
-  width: 2em;
-  height: 2em;
+  color: #d2e0d2;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
 }
-.quantity_value{
-  background-color: #ffffff;
-  border: 2px solid #496949;
-  border-radius: 10px;
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+.password:link, .password:visited, .password:focus{
+  color: #496949;
+  font-family: 'Alegreya SC', serif;
+}
+.password:hover, .password:active{
   color: #496949;
   font-family: 'Alegreya SC', serif;
   font-weight: 600;
-  font-size: 1.25em;
-  width: 4em;
-  height: 2em;
-  text-align: center;
 }
-.shrinktofit{
-  object-fit: contain;
-  display: inline-block;
-  list-style-type: none;
-}*/
 .centercontents {
   display: block;
   text-align: center;

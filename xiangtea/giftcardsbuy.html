@@ -380,11 +380,11 @@
                 <label for="fullname">Recipient's Name:</label><br>
                 <input type="text" id="fullname" name="full_name" value="" style="width: 100%"><br>
                 <label for="email">Recipient's Email:</label><br>
-                <input type="email" id="email" name="email" value="" style="width: 100%"><br>
+                <input type="email" id="myEmail" name="email" style="width: 100%" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
                 <label for="fullname">Your Name:</label><br>
                 <input type="text" id="address1" name="address1" value="" style="width: 100%"><br>
                 <label for="email">Your Email:</label><br>
-                <input type="email" id="email" name="email" value="" style="width: 100%"><br>
+                <input type="email" id="myEmail" name="email" style="width: 100%" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
                 <label for="date">Delivery Date:</label><br>
                 <input type="date" id="date" name="date" value="" style="width: 100%" class="font"><br>
               </form>
@@ -427,6 +427,14 @@
                 </div>
               </div>
             </div>
+
+                  <!--Email-->
+                  <script>
+                    function myFunction() {
+                    var x = document.getElementById("myEmail").pattern;
+                    document.getElementById("demo").innerHTML = x;
+                  }
+                  </script>
 
             <div class="separatedivs">
               <ul class="footerright">
